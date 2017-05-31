@@ -7,12 +7,12 @@
     <button class="menu-icon" type="button" data-toggle="primary-menu"></button>
   </div>
   <div class="top-bar-right primary-menu" id="primary-menu">
-    <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+    <ul class="menu vertical medium-horizontal" data-dropdown-menu>
     {% assign allpages = site.pages | sort:"order" %}
       {% for page in allpages %}
-        {% if page.title %}
-      <li><a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
-      {% endif %}
+        {% if page.title and page.url != '/thanks' %}
+        <li><a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
