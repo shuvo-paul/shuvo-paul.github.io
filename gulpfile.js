@@ -6,8 +6,8 @@ var uglify = require('gulp-uglify');
 var sassPaths = [
   'src/bower_components/normalize.scss/sass',
   'src/bower_components/foundation-sites/scss',
-  'src/bower_components/motion-ui/src',
-  'src/bower_components/font-awesome/scss'
+  'src/bower_components/motion-ui/src'
+  //'src/bower_components/font-awesome/scss'
 ];
 
 
