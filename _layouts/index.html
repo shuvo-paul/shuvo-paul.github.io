@@ -4,10 +4,24 @@ layout: default
   <section class="intro text-center window-height">
     <div class="vertically-center">
       {{content}}
-      
-      {% for skill in page.skills %}
-        <button class="button hollow">{{skill}}</button>
-      {% endfor %}
+      <div class="skill-set">
+          <div class="skill-set__label">{languages}</div>
+          {% for skill in page.languages %}
+            <button class="button hollow">{{skill}}</button>
+          {% endfor %}
+      </div>
+      <div class="skill-set">
+          <div class="skill-set__label">{frameworks}</div>
+          {% for skill in page.frameworks %}
+            <button class="button hollow">{{skill}}</button>
+          {% endfor %}
+      </div>
+      <div class="skill-set">
+          <div class="skill-set__label">{tools}</div>
+          {% for skill in page.tools %}
+            <button class="button hollow">{{skill}}</button>
+          {% endfor %}
+      </div>
     </div>
   </section>
   <section class="section recent-works text-center">

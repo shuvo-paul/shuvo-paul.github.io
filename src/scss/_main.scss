@@ -29,7 +29,7 @@
 				height: 30px;
 				padding: 3px;
 				background-color: $white;
-			
+
 			svg{
 				fill: $primary-color;
 			}
@@ -83,12 +83,12 @@ header{
 		&:not(.is-stuck){
 			padding-top: 15px;
 			padding-bottom: 15px;
-			transition: padding 0.25s ease; 
+			transition: padding 0.25s ease;
 		}
 		&.is-stuck{
 			.menu a{
 				font-size: 95%;
-				transition: font-size 0.25s ease; 
+				transition: font-size 0.25s ease;
 			}
 			.logo{
 				font-size: 20px;
@@ -131,6 +131,20 @@ header{
 		padding: 8px 12px;
 	}
 }
+
+.skill-set {
+	&:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	&__label {
+		color: #777777;
+		font-size: 9px;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+}
+
 .recent-works{
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(10,10,10,0.06);
 	box-shadow: 0px 3px 5px 0px rgba(10,10,10,0.06);
@@ -164,7 +178,7 @@ header{
 
 }
 .contacts{
-	
+
 	.menu{
 		margin-left: -1rem;
 		&.vertical{

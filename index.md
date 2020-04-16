@@ -1,9 +1,11 @@
 ---
 title: Home
 layout: index
-skills: [HTML, CSS3, SASS, JavaScript, jQuery, BootStrap, Zurb Foundation, PHP, WordPress]
+languages: [HTML, CSS3, SASS, JavaScript, PHP]
+frameworks: [BootStrap, Zurb Foundation, Jekyll, React.Js, Express.js, SilverStripe]
+tools: [Git, Gulp, Grunt]
 worksType: featured
 order: 1
 ---
 
-# Front-end & WordPress Developer
+# Full Stack Web Developer
