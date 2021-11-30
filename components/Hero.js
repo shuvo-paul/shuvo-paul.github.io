@@ -31,7 +31,7 @@ const Hero = () => {
                         </div>
                         <div className="flex-shrink px-4">
                             <div className="w-[224px] rounded-lg overflow-hidden mt-16 mr-6">
-                                <Image src="./me.jpeg" alt="Shuvo Paul" />
+                                <Image src="./me.jpeg" alt="Shuvo Paul"  width="224" height="224" />
                             </div>
                         </div>
                     </div>
