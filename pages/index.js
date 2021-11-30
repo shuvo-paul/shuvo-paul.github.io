@@ -7,10 +7,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet" />
       </Head>
       <Header/>
       <Hero/>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Hero = () => {
     return (
         <section className="hero py-8">
@@ -13,7 +15,7 @@ const Hero = () => {
                                     I am a self motivated web developer :)
                                 </h1>
                                 <p className="text-white text-opacity-70 mb-4">
-                                    It's fun to me to create things for the web. I always love to play with team. So that in the very beging of my dev carrier I founded a team called "LazyCoders". The main thought behind the name was we don't like <strong className="text-white/80">redundency</strong>.
+                                    It&aposs fun to me to create things for the web. I always love to play with team. So that in the very beging of my dev carrier I founded a team called &quotLazyCoders&quot. The main thought behind the name was we don&apost like <strong className="text-white/80">redundency</strong>.
                                 </p>
                                 <p className="text-white text-opacity-70">Here are few techs I love to work with:</p>
                                 <ul className="tech-list text-white text-opacity-70 grid grid-cols-2 gap-2 mt-6">
@@ -29,7 +31,7 @@ const Hero = () => {
                         </div>
                         <div className="flex-shrink px-4">
                             <div className="w-[224px] rounded-lg overflow-hidden mt-16 mr-6">
-                                <img src="./me.jpeg" alt="Shuvo Paul" />
+                                <Image src="./me.jpeg" alt="Shuvo Paul" />
                             </div>
                         </div>
                     </div>
