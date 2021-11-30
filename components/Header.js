@@ -6,36 +6,21 @@ const Header = () => {
             <div className="container">
                 <div className="flex flex-wrap flex-row items-center">
                     <div className="flex-shrink">
-                        <Link href="/">
-                            <a className="text-primary-500 text-2xl font-medium font-display tracking-wide leading-none">{`{{Shuvo Paul}}`}</a>
-                        </Link>
+                        <a href="/" className="text-primary-500 text-2xl font-medium font-display tracking-wide leading-none">{`{{Shuvo Paul}}`}</a>
                     </div>
                     <div className="flex-grow">
                         <ul className="flex flex-wrap flex-row justify-end -mx-4">
                             <li className="mx-4">
-                                <Link href="#about">
-                                    <a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >About</a>
-                                </Link>
+                                <a href="#experience" className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a>
                             </li>
                             <li className="mx-4">
-                                <Link href="#about">
-                                    <a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experience</a>
-                                </Link>
+                                <a href="#work" className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Works</a>
                             </li>
                             <li className="mx-4">
-                                <Link href="#about">
-                                    <a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Work</a>
-                                </Link>
+                                <a href="#contact" className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Contact</a>
                             </li>
                             <li className="mx-4">
-                                <Link href="#about">
-                                    <a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Contact</a>
-                                </Link>
-                            </li>
-                            <li className="mx-4">
-                                <Link href="#about">
-                                    <a className="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
-                                </Link>
+                                <a href="#about" className="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
                             </li>
                         </ul>
                     </div>
