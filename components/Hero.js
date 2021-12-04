@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Hero = () => {
+const Hero = ({title, content, techs}) => {
     return (
         <section className="hero py-8">
             <div className="container">
@@ -12,20 +12,17 @@ const Hero = () => {
                                     Hello,
                                 </div>
                                 <h1 className="hero__title text-opacity-90 text-white text-4xl mb-4">
-                                    I am a self motivated web developer :)
+                                    {title}
                                 </h1>
-                                <p className="text-white text-opacity-70 mb-4">
-                                    It&aposs fun to me to create things for the web. I always love to play with team. So that in the very beging of my dev carrier I founded a team called &quotLazyCoders&quot. The main thought behind the name was we don&apost like <strong className="text-white/80">redundency</strong>.
-                                </p>
-                                <p className="text-white text-opacity-70">Here are few techs I love to work with:</p>
+                                <div className="hero__content text-white text-opacity-70 mb-4" dangerouslySetInnerHTML={{__html: content}}  />
+
+                                <div className="text-white text-opacity-70">Here are few techs I love to work with:</div>
+
                                 <ul className="tech-list text-white text-opacity-70 grid grid-cols-2 gap-2 mt-6">
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">ReactJs</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">NextJs</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">ExpressJS</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">SilverStripe</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">Wordpress</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">MongoDB</li>
-                                    <li className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">MySQL</li>
+                                    {techs.map((item, index)=>(
+                                        <li key={index} className="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">{item}</li>
+
+                                    ))}
                                 </ul>
                             </div>
                         </div>
