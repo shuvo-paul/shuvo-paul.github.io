@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Hero = ({title, content, techs}) => {
     return (
-        <section className="hero py-8">
+        <section className="hero py-8 mt-8">
             <div className="container">
                 <div className="max-w-5xl mx-auto">
                     <div className="flex flex-wrap">
