@@ -22,7 +22,6 @@ export async function getStaticProps() {
   const heroMdWithMeta = fs.readFileSync(path.join('markdowns', 'hero.md'));
 
   const hero = matter(heroMdWithMeta);
-  console.log(hero.data.techs);
 
   return {
     props: {
