@@ -10,15 +10,19 @@ import Projects from '../components/Projects'
 
 export default function Home({hero, experiencesList}) {
   return (
-    <div>
+    <>
       <Head>
-        <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
+          <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
       </Head>
       <Header/>
-      <Hero {...hero} />
-      <Experiences list={experiencesList} />
-      <Projects list={[[], []]} />
-    </div>
+      <div className='container'>
+        <div className="max-w-6xl mx-auto">
+          <Hero {...hero} />
+          <Experiences list={experiencesList} />
+          <Projects list={[[], []]} />
+        </div>
+      </div>
+    </>
   )
 }
 
