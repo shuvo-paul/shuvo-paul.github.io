@@ -1,6 +1,6 @@
 const Projects = ({list}) => {
     return(
-        <div className="mt-48">
+        <div className="pt-8 mt-32" id="projects">
             <h2 className="mb-9">Some things I've built ...</h2>
 
             {list.map((item, i) =>(

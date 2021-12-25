@@ -14,7 +14,7 @@ const Header = () => {
                                 <Link href="#experience"><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a></Link>
                             </li>
                             <li className="mx-4">
-                                <Link href="#work" ><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Works</a></Link>
+                                <Link href="#projects" ><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Projects</a></Link>
                             </li>
                             <li className="mx-4">
                                 <Link href="#contact" ><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors">Contact</a></Link>
