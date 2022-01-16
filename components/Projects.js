@@ -1,4 +1,5 @@
-import Image from "next/image"
+import Link from "next/link"
+import { ReactSVG } from 'react-svg'
 
 const Projects = ({list}) => {
     return(
@@ -27,7 +28,28 @@ const Projects = ({list}) => {
                                 <li key={i} className="mx-3">{tech}</li>
                             ))}
                         </ul>
-                        <Image src="/icons/github.svg" width={20} height={20}/>
+                        
+                        <ul className={`mt-4 flex list-none ${(i+1)%2? 'justify-end' : '' }`}>
+                            {item.gitURL &&
+                                <li className="mx-3">
+                                    <Link href={"//"+item.gitURL}>
+                                        <a target="_blank">
+                                            <ReactSVG src="/icons/github.svg" className="icon" wrapper="span" />
+                                        </a>
+                                    </Link>
+                                </li>
+                            }
+
+                            {item.externalURL &&
+                                <li className="mx-3">
+                                    <Link href={"//"+item.externalURL}>
+                                        <a target="_blank">
+                                            <ReactSVG src="/icons/external-link.svg" className="icon" wrapper="span" />
+                                        </a>
+                                    </Link>
+                                </li>
+                            }
+                        </ul>
                     </div>
                 </div>
             ))}

@@ -24,3 +24,11 @@
         @apply text-white text-opacity-90 text-2xl;
     }
 }
+
+.icon svg {
+    stroke: rgba(255, 255, 255, 0.6);
+}
+
+a:hover .icon svg {
+    @apply stroke-primary-500;
+}
