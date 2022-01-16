@@ -7,12 +7,12 @@ const Projects = ({list}) => {
             <h2 className="mb-9">Some things I've built ...</h2>
 
             {list.map((item, i) =>(
-                <div key={i} className="grid grid-cols-12 gap-x-8 items-center mb-20">
-                    <div className={`row-span-full ${(i+1)%2? 'col-start-1 col-span-7' : 'col-span-7 col-end-13' }`}>
+                <div key={i} className="grid grid-cols-12 gap-x-8 gap-y-4 items-center mb-20">
+                    <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-start-1 md:col-span-7' : 'md:col-span-7 md:col-end-13' }`}>
                         <img src="http://placehold.jp/580x364.png" alt="" />
                     </div>
 
-                    <div className={`row-span-full ${(i+1)%2? 'col-span-7 col-end-13 text-right' : 'col-start-1 col-span-7' }`}>
+                    <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-span-7 md:col-end-13 text-right' : 'md:col-start-1 md:col-span-7' }`}>
                         {item.title &&
                             <h3 className="text-primary-500 text-xl mb-4 mx-3">{item.title}</h3>
                         }
