@@ -7,8 +7,9 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Experiences from '../components/Experiences'
 import Projects from '../components/Projects'
+import getDataFromMdDir from '../lib/getDataFromMdDir'
 
-export default function Home({hero, experiencesList}) {
+export default function Home({hero, experiencesList, projectsList}) {
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ export default function Home({hero, experiencesList}) {
         <div className="max-w-6xl mx-auto">
           <Hero {...hero} />
           <Experiences list={experiencesList} />
-          <Projects list={[[], []]} />
+          <Projects list={projectsList} />
         </div>
       </div>
     </>
@@ -30,16 +31,8 @@ export async function getStaticProps() {
   const heroMdWithMeta = fs.readFileSync(path.join('markdowns', 'hero.md'));
   const hero = matter(heroMdWithMeta);
 
-  const experiencesFiles = fs.readdirSync(path.join('markdowns', 'experiences'));
-
-  const experiencesList = experiencesFiles.map(filename=>{
-    const mdWithMeta = fs.readFileSync(path.join('markdowns/experiences', filename));
-    const {data, content} = matter(mdWithMeta);
-    return {
-      ...data,
-      content
-    }
-  })
+  const experiencesList = getDataFromMdDir('experiences');
+  const projectsList = getDataFromMdDir('projects');
 
   return {
     props: {
@@ -48,7 +41,8 @@ export async function getStaticProps() {
         techs: hero.data.techs,
         content: marked(hero.content)
       },
-      experiencesList
+      experiencesList,
+      projectsList
     }
   }
 }

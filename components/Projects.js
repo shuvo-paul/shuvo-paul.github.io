@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Projects = ({list}) => {
     return(
         <div className="pt-8 mt-32" id="projects">
@@ -10,14 +12,22 @@ const Projects = ({list}) => {
                     </div>
 
                     <div className={`row-span-full ${(i+1)%2? 'col-span-7 col-end-13 text-right' : 'col-start-1 col-span-7' }`}>
-                        <h3 className="text-primary-500 text-xl mb-4 mx-3">Lorem ipsum</h3>
-                        <div className="bg-secondary-600 shadow text-white text-opacity-70 p-6 rounded">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aliquid ea consequuntur eos, cupiditate natus laborum ab possimus in? Numquam, consequatur nihil possimus esse excepturi nesciunt minus expedita doloribus cum?
-                        </div>
+                        {item.title &&
+                            <h3 className="text-primary-500 text-xl mb-4 mx-3">{item.title}</h3>
+                        }
+
+                        {item.content && 
+                            <div className="bg-secondary-600 shadow text-white text-opacity-70 p-6 rounded">
+                                {item.content}
+                            </div>
+                        }
+
                         <ul className={`flex list-none text-white text-opacity-70 mt-2 font-light ${(i+1)%2? 'justify-end' : '' }`}>
-                            <li className="mx-3">NextJs</li>
-                            <li className="mx-3">Foundation</li>
+                            {item.techs.map((tech, i)=>(
+                                <li key={i} className="mx-3">{tech}</li>
+                            ))}
                         </ul>
+                        <Image src="/icons/github.svg" width={20} height={20}/>
                     </div>
                 </div>
             ))}
