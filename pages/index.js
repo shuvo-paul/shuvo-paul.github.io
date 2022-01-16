@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import Experiences from '../components/Experiences'
 import Projects from '../components/Projects'
 import getDataFromMdDir from '../lib/getDataFromMdDir'
+import Footer from '../components/Footer'
 
 export default function Home({hero, experiencesList, projectsList}) {
   return (
@@ -23,6 +24,7 @@ export default function Home({hero, experiencesList, projectsList}) {
           <Projects list={projectsList} />
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
