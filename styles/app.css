@@ -32,21 +32,3 @@
 a:hover .icon svg {
     @apply stroke-primary-500;
 }
-
-.social {
-    @apply mt-24 mb-6 fixed left-0 top-1/2 -translate-y-full flex justify-center md:flex-col;
-}
-
-.social::before {
-    content: "";
-    width: 28px;
-    height: 100px;
-    @apply border-t border-r border-white border-opacity-60;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-}
-
-.social li {
-    @apply mx-4 md:my-4;
-}
