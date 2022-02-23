@@ -1,15 +1,18 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ReactSVG } from 'react-svg'
 
 const Projects = ({list}) => {
+    const title = "Some things I've built ...";
+    
     return(
         <div className="pt-8 mt-32" id="projects">
-            <h2 className="mb-9">Some things I've built ...</h2>
+            <h2 className="mb-9">{title}</h2>
 
             {list.map((item, i) =>(
                 <div key={i} className="grid grid-cols-12 gap-x-8 gap-y-4 items-center mb-20">
                     <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-start-1 md:col-span-7' : 'md:col-span-7 md:col-end-13' }`}>
-                        <img src="http://placehold.jp/580x364.png" alt="" />
+                        <Image src="http://placehold.jp/580x364.png" alt="" width={580} height={364} />
                     </div>
 
                     <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-span-7 md:col-end-13 text-right' : 'md:col-start-1 md:col-span-7' }`}>
