@@ -9,7 +9,7 @@ const Header = () => {
                         <Link href="/"><a className="text-primary-500 text-2xl font-medium font-display tracking-wide leading-none">{`{{Shuvo Paul}}`}</a></Link>
                     </div>
                     <div className="flex-grow">
-                        <ul className="hidden flex-wrap flex-row justify-end -mx-4 md:felx">
+                        <ul className="hidden flex-wrap flex-row justify-end -mx-4 md:flex">
                             <li className="mx-4">
                                 <Link href="#experience"><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a></Link>
                             </li>
