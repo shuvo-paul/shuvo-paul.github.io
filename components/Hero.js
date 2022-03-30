@@ -4,7 +4,7 @@ const Hero = ({title, content, techs}) => {
     return (
         <section className="hero py-8 mt-8">
             <div className="grid grid-cols-5 gap-x-8">
-                <div className="col-span-3">
+                <div className="col-span-full md:col-span-3">
                     <div className="max-w-[512px]">
                         <div className="text-white text-opacity-70 font-bold text-6xl mb-6">
                             Hello,
@@ -24,7 +24,7 @@ const Hero = ({title, content, techs}) => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-full md:col-span-2">
                     <div className="flex justify-center">
                         <div className="leading-[0] shadow rounded-lg overflow-hidden mt-16">
                             <Image src="./me.jpeg" alt="Shuvo Paul"  width="224" height="224" />
