@@ -15,7 +15,7 @@ const Projects = ({list}) => {
                         <Image src="http://placehold.jp/580x364.png" alt="" width={580} height={364} />
                     </div>
 
-                    <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-span-7 md:col-end-13 text-right' : 'md:col-start-1 md:col-span-7' }`}>
+                    <div className={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-span-7 md:col-end-13 md:text-right' : 'md:col-start-1 md:col-span-7' } z-10`}>
                         {item.title &&
                             <h3 className="text-primary-500 text-xl mb-4 mx-3">{item.title}</h3>
                         }
@@ -26,13 +26,13 @@ const Projects = ({list}) => {
                             </div>
                         }
 
-                        <ul className={`flex list-none text-white text-opacity-70 mt-2 font-light ${(i+1)%2? 'justify-end' : '' }`}>
+                        <ul className={`flex list-none text-white text-opacity-70 mt-2 font-light ${(i+1)%2? 'md:justify-end' : '' }`}>
                             {item.techs.map((tech, i)=>(
                                 <li key={i} className="mx-3">{tech}</li>
                             ))}
                         </ul>
                         
-                        <ul className={`mt-4 flex list-none ${(i+1)%2? 'justify-end' : '' }`}>
+                        <ul className={`mt-4 flex list-none ${(i+1)%2? 'md:justify-end' : '' }`}>
                             {item.gitURL &&
                                 <li className="mx-3">
                                     <Link href={"//"+item.gitURL}>
