@@ -26,9 +26,9 @@ const Header = () => {
                         
                         <div className="flex items-center justify-end md:hidden">
                             <label className='leading-[0]' htmlFor="mobile-nav-checkbox">
-                                <div class="hamburger hamburger--emphatic">
-                                    <div class="hamburger-box">
-                                    <div class="hamburger-inner"></div>
+                                <div className="hamburger hamburger--emphatic">
+                                    <div className="hamburger-box">
+                                    <div className="hamburger-inner"></div>
                                     </div>
                                 </div>
                             </label>
