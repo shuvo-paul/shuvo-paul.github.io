@@ -9,7 +9,7 @@ const Header = () => {
                         <Link href="/"><a className="text-primary-500 text-2xl font-medium font-display tracking-wide leading-none">{`{{Shuvo Paul}}`}</a></Link>
                     </div>
                     <div className="flex-grow">
-                        <ul className="flex flex-wrap flex-row justify-end -mx-4">
+                        <ul className="hidden flex-wrap flex-row justify-end -mx-4 md:felx">
                             <li className="mx-4">
                                 <Link href="#experience"><a className="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a></Link>
                             </li>
@@ -23,6 +23,16 @@ const Header = () => {
                                 <Link href="#about" ><a className="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a></Link>
                             </li>
                         </ul>
+                        
+                        <div className="flex items-center justify-end md:hidden">
+                            <label className='leading-[0]' htmlFor="mobile-nav-checkbox">
+                                <div class="hamburger hamburger--emphatic">
+                                    <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ import Footer from '../components/Footer'
 
 export default function Home({hero, experiencesList, projectsList}) {
   return (
-    <>
+    <div className='page-wrap'>
       <Head>
           <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
       </Head>
@@ -25,7 +25,7 @@ export default function Home({hero, experiencesList, projectsList}) {
         </div>
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
