@@ -118,6 +118,10 @@ a:hover .icon svg {
     display: none;
 }
 
+#mobile-nav-checkbox:checked + #__next > .page-wrap {
+    @apply -translate-x-64 transition-transform;
+}
+
 #mobile-nav-checkbox:checked + #__next > .page-wrap .hamburger-inner {
     transition-delay: 0s;
     transition-timing-function: ease-out;
@@ -136,4 +140,12 @@ a:hover .icon svg {
     right: -80px;
     transition: right .125s ease-out,top .05s linear .125s,transform .125s cubic-bezier(.075,.82,.165,1) .175s;
     transform: translate3d(-80px,80px,0) rotate(-45deg);
+}
+
+.off-canvas {
+    @apply translate-x-full transition-transform;
+}
+
+#mobile-nav-checkbox:checked + #__next > .off-canvas {
+    @apply translate-x-0;
 }

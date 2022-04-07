@@ -3,29 +3,34 @@ import path from 'path'
 import matter from 'gray-matter'
 import {marked} from 'marked'
 import Head from 'next/head'
+import {Fragment} from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Experiences from '../components/Experiences'
 import Projects from '../components/Projects'
 import getDataFromMdDir from '../lib/getDataFromMdDir'
 import Footer from '../components/Footer'
+import OffCanvas from '../components/OffCanvas'
 
 export default function Home({hero, experiencesList, projectsList}) {
   return (
-    <div className='page-wrap'>
-      <Head>
-          <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
-      </Head>
-      <Header/>
-      <div className='container'>
-        <div className="max-w-6xl mx-auto">
-          <Hero {...hero} />
-          <Experiences list={experiencesList} />
-          <Projects list={projectsList} />
+    <Fragment>
+      <OffCanvas/>
+      <div className='page-wrap relative'>
+        <Head>
+            <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
+        </Head>
+        <Header/>
+        <div className='container'>
+          <div className="max-w-6xl mx-auto">
+            <Hero {...hero} />
+            <Experiences list={experiencesList} />
+            <Projects list={projectsList} />
+          </div>
         </div>
+        <Footer/>
       </div>
-      <Footer/>
-    </div>
+    </Fragment>
   )
 }
 
