@@ -17,6 +17,9 @@ export default function Home({hero, experiencesList, projectsList}) {
     <Fragment>
       <OffCanvas/>
       <div className='page-wrap relative'>
+        <div className="absolute top-[256px] left-[17%] anim_circle">
+          <div className="w-6 h-6 border-2 border-primary-700"></div>
+        </div>
         <Head>
             <title>Web Developer || JavaScript, ReactJs, NodeJs, PHP, Silverstripe</title>
         </Head>

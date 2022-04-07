@@ -149,3 +149,17 @@ a:hover .icon svg {
 #mobile-nav-checkbox:checked + #__next > .off-canvas {
     @apply translate-x-0;
 }
+
+.anim_circle {
+    animation: animCircle 15s infinite linear;
+}
+
+@keyframes animCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
