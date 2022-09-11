@@ -1,69 +1,51 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-eca24477.js",
+    "file": "start-aa5c8d17.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-0c08dead.js",
-      "_singletons-d1fb5791.js"
+      "_index-707d8676.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte",
-      "src/routes/todos/index.svelte"
+      "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-f152d763.js",
+    "file": "pages/__layout.svelte-63a96578.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0c08dead.js"
+      "_index-707d8676.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-81023d6d.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-554f2442.js",
+    "file": "error.svelte-e6655f7c.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0c08dead.js"
+      "_index-707d8676.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-1713acd7.js",
+    "file": "pages/index.svelte-247663cb.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0c08dead.js"
+      "_index-707d8676.js"
     ],
     "css": [
       "assets/pages/index.svelte-9bda2cd8.css"
     ]
   },
-  "src/routes/todos/index.svelte": {
-    "file": "pages/todos/index.svelte-2d3e75a8.js",
-    "src": "src/routes/todos/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-0c08dead.js",
-      "_singletons-d1fb5791.js"
-    ],
-    "css": [
-      "assets/pages/todos/index.svelte-f4193d22.css"
-    ]
-  },
-  "_index-0c08dead.js": {
-    "file": "chunks/index-0c08dead.js"
-  },
-  "_singletons-d1fb5791.js": {
-    "file": "chunks/singletons-d1fb5791.js"
+  "_index-707d8676.js": {
+    "file": "chunks/index-707d8676.js"
   }
 }
