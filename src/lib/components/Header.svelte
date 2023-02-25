@@ -19,7 +19,7 @@
 						<a href="#contact" class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors">Contact</a>
 					</li>
 					<li class="mx-4">
-						<a href="#about" class="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
+						<a href="#" class="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
 					</li>
 				</ul>
 			</div>

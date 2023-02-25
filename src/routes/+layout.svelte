@@ -1,6 +1,6 @@
 <script>
-	import Header from '$lib/header/Header.svelte';
-	import Footer from "$lib/footer/footer.svelte";
+	import Header from '$lib/components/Header.svelte';
+	import Footer from "$lib/components/Footer.svelte";
 </script>
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>

@@ -1,9 +1,12 @@
 <script>
+    // @ts-ignore
     import Github from '$lib/icons/github.svg?component';
+    // @ts-ignore
     import LinkedIn from '$lib/icons/linkedin.svg?component';
+    // @ts-ignore
     import Twitter from '$lib/icons/twitter.svg?component';
 </script>
-<footer class="text-center pt-10 pb-4 md:pb-6">
+<footer class="text-center pt-10 pb-4 md:pb-6" id="contact">
     <div class="container">
         <div class="text-white text-opacity-70 max-w-xl mx-auto">
             <h2 class="mb-3">Get In Touch</h2>
