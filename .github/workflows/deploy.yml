@@ -1,26 +1,22 @@
 name: Deploy to GitHub Pages
 
-
 on:
   push:
     branches: [sveltekit-latest]
-
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-
     strategy:
       matrix:
         node-version: [18.14.2]
-
 
     steps:
       - name: Get files
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2.5.3   # updated setup-node action version
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
