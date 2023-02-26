@@ -3,7 +3,7 @@
     import Experiences from "$lib/components/Experiences.svelte";
     import Projects from "$lib/components/Projects.svelte";
     export let data;
-    const {hero} = data;
+    const {hero, experiencesList, projectsList} = data;
     const parsedHero = JSON.parse(hero);
 </script>
 
@@ -15,7 +15,7 @@
 <main class="container">
 	<div class="max-w-6xl mx-auto">
 		<Hero {...parsedHero} />
-        <Experiences/>
-        <Projects/>
+        <Experiences list={experiencesList} />
+        <Projects list={projectsList} />
 	</div>
 </main>
