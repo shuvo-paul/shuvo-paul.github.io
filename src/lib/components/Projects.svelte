@@ -1,8 +1,12 @@
 <script>
     // @ts-ignore
     import Github from '$lib/icons/github.svg?component';
+    // @ts-ignore
     import ExternalLink from '$lib/icons/external-link.svg?component';
-    export let list;
+    /**
+	 * @type {any}
+	 */
+     export let list;
     const title = "Some things I've built ...";
 </script>
 <div class="pt-8 mt-32" id="projects">
