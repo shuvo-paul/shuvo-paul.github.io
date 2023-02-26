@@ -1,14 +1,11 @@
 <script>
-    let title = "";
-    let techs = [
-        'ReactJs',
-        'NextJs',
-        'ExpressJS',
-        'SilverStripe',
-        'MongoDB',
-        'MySQL'
-    ];
-    let content = '<p>It\'s fun to me to create things for the web. I always love to play with team. So that in the very beging of my dev carrier I founded a team called "LazyCoders". The main thought behind the name was we don\'t like <strong>redundency</strong>.</p>';
+    export let data;
+    console.log(data);
+    /**
+	 * @type {string HTML}
+	 */
+     export let content;
+    const {title, techs} = data;
 </script>
 
 <section class="hero py-8 mt-8">
