@@ -590,6 +590,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -638,6 +642,9 @@ video {
 .mt-9 {
   margin-top: 2.25rem;
 }
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -661,6 +668,12 @@ video {
 }
 .max-w-\[512px\] {
   max-width: 512px;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.max-w-sm {
+  max-width: 24rem;
 }
 .max-w-xl {
   max-width: 36rem;
