@@ -1,6 +1,5 @@
 <script>
     export let data;
-    console.log(data);
     /**
 	 * @type {string HTML}
 	 */
@@ -26,7 +25,7 @@
 
                 <ul class="tech-list text-white text-opacity-70 grid grid-cols-2 gap-2 mt-6">
                     {#each techs as item}
-                        <li class="before:content-➪ before:text-primary-500 before:mr-2 font-light">{item}</li>
+                        <li class="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">{item}</li>
                     {/each}
                 </ul>
             </div>
