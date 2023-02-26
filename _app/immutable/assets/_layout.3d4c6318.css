@@ -825,6 +825,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 158 124 / var(--tw-text-opacity));
 }
+.before\:content-\[\'\27AA\'\]::before {
+  --tw-content: '➪';
+  content: var(--tw-content);
+}
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
