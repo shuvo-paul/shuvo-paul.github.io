@@ -4,7 +4,7 @@
     import Projects from "$lib/components/Projects.svelte";
     export let data;
     const {hero, experiencesList, projectsList} = data;
-    const parsedHero = JSON.parse(hero);
+
 </script>
 
 <svelte:head>
@@ -14,7 +14,7 @@
 
 <main class="container">
 	<div class="max-w-6xl mx-auto">
-		<Hero {...parsedHero} />
+		<Hero {...hero} />
         <Experiences list={experiencesList} />
         <Projects list={projectsList} />
 	</div>

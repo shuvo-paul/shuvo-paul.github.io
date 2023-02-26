@@ -1,4 +1,9 @@
 <script lang="ts">
+	/**
+	* @type {string}
+	*/
+	export let origin;
+	console.log(origin)
 </script>
 
 <header class="py-8">
@@ -10,13 +15,13 @@
 			<div class="flex-grow">
 				<ul class="hidden flex-wrap flex-row justify-end -mx-4 md:flex">
 					<li class="mx-4">
-						<a href="#experience" class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a>
+						<a href={`${origin}#experience`} class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Experiences</a>
 					</li>
 					<li class="mx-4">
-						<a href="#projects" class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Projects</a>
+						<a href={`${origin}#projects`} class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors" >Projects</a>
 					</li>
 					<li class="mx-4">
-						<a href="#contact" class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors">Contact</a>
+						<a href={`${origin}#contact`} class="text-white text-opacity-70 font-light hover:text-primary-500 transition-colors">Contact</a>
 					</li>
 					<li class="mx-4">
 						<a href="#" class="text-primary-500 font-light border border-primary-500 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>

@@ -1,10 +1,16 @@
 <script>
-    export let data;
     /**
-	 * @type {string HTML}
+	 * @type {string}
 	 */
-     export let content;
-    const {title, techs} = data;
+    export let title;
+    /**
+	 * @type {[]}
+	 */
+    export let techs;
+    /**
+	 * @type {string}
+	 */
+    export let content;
 </script>
 
 <section class="hero py-8 mt-8">
