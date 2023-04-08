@@ -3,4 +3,4 @@ title: I am a self motivated web developer :)
 techs: [ExpressJS, SvelteKit, ReactJs, NextJs, SilverStripe, MongoDB, MySQL]
 ---
 
-It's fun to me to create things for the web. I always love to play with team. So that in the very beging of my dev carrier I founded a team called "LazyCoders". The main thought behind the name was we don't like **redundency**.
+I've always been passionate about technology and its ability to shape the world around us. Through self-study and hands-on experience, I've honed my skills in web development.
