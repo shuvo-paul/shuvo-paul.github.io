@@ -10,7 +10,7 @@
     <div class="container">
         <div class="text-white text-opacity-70 max-w-xl mx-auto">
             <h2 class="mb-3">Get In Touch</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptate amet consequuntur quasi aut. Necessitatibus iure amet, nostrum molestiae suscipit vel. Inventore soluta nisi esse repellat aliquam? Pariatur, libero ipsa.</p>
+            <p>Whether you have a project in mind or simply want to discuss your ideas, I'm always eager to connect and collaborate. Let's work together to bring your vision to life!</p>
             <a class="mt-9 inline-block mx-auto border border-primary-500 text-primary-500 hover:text-primary-300 py-3 px-5 rounded" href="mailto:shuvopaul@yahoo.com">
                 Say Hello
             </a>
@@ -23,12 +23,12 @@
                 </a>
             </li>
             <li class='mx-4 md:my-4'>
-                <a href="//linkedin.com/in/shuvodotpaul" target="_blank" rel="noreferrer">
+                <a href="//linkedin.com/in/shuvopaul396" target="_blank" rel="noreferrer">
                     <LinkedIn class="icon"/>
                 </a>
             </li>
             <li class='mx-4 md:my-4'>
-                <a href="//twitter.com/shuvodotpaul" target="_blank" rel="noreferrer">
+                <a href="//twitter.com/shuvopaul396" target="_blank" rel="noreferrer">
                     <Twitter class="icon"/>
                 </a>
             </li>
