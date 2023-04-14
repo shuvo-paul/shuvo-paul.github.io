@@ -17,19 +17,19 @@
     <div class="grid grid-cols-5 gap-x-8">
         <div class="col-span-full md:col-span-3">
             <div class="max-w-[512px]">
-                <div class="text-white text-opacity-70 font-bold text-6xl mb-6">
+                <div class="font-bold text-6xl mb-6">
                     Hello,
                 </div>
-                <h1 class="mb-4">
+                <h1 class="mb-4 unstyled text-4xl font-normal">
                     {title}
                 </h1>
-                <div class="hero__content text-white text-opacity-70 mb-4" >
+                <div class="hero__content text-opacity-70 mb-4" >
                     {@html content}
                 </div>
 
-                <div class="text-white text-opacity-70">Here are few techs I love to work with:</div>
+                <div class="">Here are few techs I love to work with:</div>
 
-                <ul class="tech-list text-white text-opacity-70 grid grid-cols-2 gap-2 mt-6">
+                <ul class="tech-list grid grid-cols-2 gap-2 mt-6">
                     {#each techs as item}
                         <li class="before:content-['➪'] before:text-primary-500 before:mr-2 font-light">{item}</li>
                     {/each}

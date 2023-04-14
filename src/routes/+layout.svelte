@@ -1,17 +1,22 @@
 <script>
-	import "../app.css";
+	// The ordering of these imports is critical to your app working properly
+	import '@skeletonlabs/skeleton/themes/theme-rocket.css';
+	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
+	import '@skeletonlabs/skeleton/styles/all.css';
+	// Most of your app wide CSS should be put in this file
+	import '../app.postcss';
+
 	import Header from '$lib/components/Header.svelte';
-	import Footer from "$lib/components/Footer.svelte";
+	import Footer from '$lib/components/Footer.svelte';
 
 	export let data;
 </script>
+
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com"/>
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet" />
+	
 </svelte:head>
 
-<Header origin={data.origin}/>
+<Header origin="{data.origin}" />
 
 <main>
 	<slot />

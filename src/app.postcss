@@ -1,0 +1,15 @@
+/*place global styles here */
+
+:root {
+    --theme-font-family-base: Chivo,sans-serif;
+    --theme-font-family-heading: Bree Serif,serif;
+}
+
+[data-theme='rocket'] {
+    background-image: radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.10) 0px, transparent 50%),
+			radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.10) 0px, transparent 50%);
+}
+
+[data-theme='rocket'] h1, [data-theme='rocket'] h2, [data-theme='rocket'] h3, [data-theme='rocket'] h4, [data-theme='rocket'] h5, [data-theme='rocket'] h6 {
+    font-weight: 400;
+}
