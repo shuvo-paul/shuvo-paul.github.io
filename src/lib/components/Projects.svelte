@@ -15,7 +15,9 @@
     {#each list as item, i }
         <div class="grid grid-cols-12 gap-x-8 gap-y-4 items-center mb-20">
             <div class={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-start-1 md:col-span-7' : 'md:col-span-7 md:col-end-13' }`}>
-                <img src="http://placehold.jp/580x364.png" alt="" width={580} height={364} />
+                <div class="relative after:bg-primary-500/10 after:absolute after:top-0 after:left-0 after:w-full after:h-full rounded overflow-hidden hover:after:bg-transparent">
+                    <img src="{item.img}" alt="" class="w-full h-auto" />
+                </div>
             </div>
 
             <div class={`col-span-full md:row-span-full ${(i+1)%2? 'md:col-span-7 md:col-end-13 md:text-right' : 'md:col-start-1 md:col-span-7' } z-10`}>
