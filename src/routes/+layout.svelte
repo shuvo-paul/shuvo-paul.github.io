@@ -8,15 +8,13 @@
 
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	export let data;
 </script>
 
 <svelte:head>
 	
 </svelte:head>
 
-<Header origin="{data.origin}" />
+<Header />
 
 <main>
 	<slot />

@@ -1,5 +1,10 @@
-<script>
-    export let data;
+<script lang="ts">
+    type Post = {
+        title: string,
+        content: string,
+        date: string
+    }
+    export let data: Post;
     const {title, content, date} = data;
 </script>
 <div class="text-white mx-auto max-w-md">

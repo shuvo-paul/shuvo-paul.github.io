@@ -1,12 +1,3 @@
-<script lang="ts">
-	import { AppBar } from '@skeletonlabs/skeleton';
-	/**
-	* @type {string}
-	*/
-	export let origin;
-	console.log(origin)
-</script>
-
 <header class="py-8">
 	<div class="container">
 		<div class="flex flex-wrap flex-row items-center">
@@ -16,13 +7,16 @@
 			<div class="flex-grow">
 				<ul class="hidden flex-wrap flex-row justify-end -mx-4 md:flex">
 					<li class="mx-4">
-						<a href={`${origin}#experience`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Experiences</a>
+						<a href={`/stories`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Stories</a>
 					</li>
 					<li class="mx-4">
-						<a href={`${origin}#projects`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Projects</a>
+						<a href={`#experience`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Experiences</a>
 					</li>
 					<li class="mx-4">
-						<a href={`${origin}#contact`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors">Contact</a>
+						<a href={`#projects`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Projects</a>
+					</li>
+					<li class="mx-4">
+						<a href={`#contact`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors">Contact</a>
 					</li>
 					<li class="mx-4">
 						<a href="#" class="unstyled font-heading-token tracking-widest font-light border border-primary-50 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
