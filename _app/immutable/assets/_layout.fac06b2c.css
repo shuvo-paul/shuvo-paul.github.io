@@ -3740,13 +3740,29 @@ input[type='file']:not(.file-dropzone-input)::file-selector-button {
   content: var(--tw-content);
   position: absolute;
 }
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
+}
 .after\:h-\[50px\]::after {
   content: var(--tw-content);
   height: 50px;
 }
+.after\:h-full::after {
+  content: var(--tw-content);
+  height: 100%;
+}
 .after\:w-\[1px\]::after {
   content: var(--tw-content);
   width: 1px;
+}
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
 }
 .after\:-translate-y-full::after {
   content: var(--tw-content);
@@ -3761,6 +3777,10 @@ input[type='file']:not(.file-dropzone-input)::file-selector-button {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-primary-50) / var(--tw-bg-opacity));
+}
+.after\:bg-primary-500\/10::after {
+  content: var(--tw-content);
+  background-color: rgb(var(--color-primary-500) / 0.1);
 }
 .after\:bg-opacity-70::after {
   content: var(--tw-content);
@@ -3791,6 +3811,10 @@ input[type='file']:not(.file-dropzone-input)::file-selector-button {
 }
 .hover\:bg-primary-hover-token:hover:hover {
   background-color: rgb(var(--color-primary-500) / 0.1);
+}
+.hover\:after\:bg-transparent:hover::after {
+  content: var(--tw-content);
+  background-color: transparent;
 }
 .disabled\:\!opacity-0:disabled {
   opacity: 0 !important;
