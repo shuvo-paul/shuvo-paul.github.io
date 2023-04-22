@@ -4009,4 +4009,4 @@ input[type='file']:not(.file-dropzone-input)::file-selector-button {
 
 [data-theme='rocket'] h1, [data-theme='rocket'] h2, [data-theme='rocket'] h3, [data-theme='rocket'] h4, [data-theme='rocket'] h5, [data-theme='rocket'] h6 {
     font-weight: 400;
-}.animIndeterminate.svelte-l4u953{transform-origin:0% 50%;animation:svelte-l4u953-animIndeterminate 2s infinite linear}@keyframes svelte-l4u953-animIndeterminate{0%{transform:translateX(0) scaleX(0)}40%{transform:translateX(0) scaleX(0.4)}100%{transform:translateX(100%) scaleX(0.5)}}
+}
