@@ -1,3 +1,6 @@
+<script>
+	import {base} from '$app/paths'
+</script>
 <header class="py-8">
 	<div class="container">
 		<div class="flex flex-wrap flex-row items-center">
@@ -7,19 +10,19 @@
 			<div class="flex-grow">
 				<ul class="hidden flex-wrap flex-row justify-end -mx-4 md:flex">
 					<li class="mx-4">
-						<a href={`/stories`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Stories</a>
+						<a href="{base}/stories" class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Stories</a>
 					</li>
 					<li class="mx-4">
-						<a href={`#experience`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Experiences</a>
+						<a href="{base}/#experience" class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Experiences</a>
 					</li>
 					<li class="mx-4">
-						<a href={`#projects`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Projects</a>
+						<a href="{base}/#projects" class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors" >Projects</a>
 					</li>
 					<li class="mx-4">
-						<a href={`#contact`} class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors">Contact</a>
+						<a href="{base}/#contact" class="unstyled font-heading-token tracking-widest text-lg font-light hover:text-primary-500 transition-colors">Contact</a>
 					</li>
 					<li class="mx-4">
-						<a href="#" class="unstyled font-heading-token tracking-widest font-light border border-primary-50 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
+						<a href="/favicon.png" class="unstyled font-heading-token tracking-widest font-light border border-primary-50 py-2 px-4 rounded-sm hover:bg-primary-100 transition-all hover:bg-opacity-20" >Resume</a>
 					</li>
 				</ul>
 			</div>
