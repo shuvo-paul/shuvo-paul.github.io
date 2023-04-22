@@ -36,5 +36,7 @@
 		"vite": "^4.0.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"@lottiefiles/svelte-lottie-player": "^0.3.0"
+	}
 }

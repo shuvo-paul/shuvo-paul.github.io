@@ -1,21 +1,25 @@
-<script>
-    /**
-	 * @type {string}
-	 */
-    export let title;
-    /**
-	 * @type {[]}
-	 */
-    export let techs;
-    /**
-	 * @type {string}
-	 */
-    export let content;
+<script lang="ts">
+    import {base} from '$app/paths'
+    import { onMount } from 'svelte';
+
+    // @ts-ignore
+	let LottiePlayer: typeof import('@lottiefiles/svelte-lottie-player');
+
+	onMount(async () => {
+        // @ts-ignore
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
+	});
+
+    export let title: string;
+
+    export let techs: string[];
+    export let content: string;
 </script>
 
 <section class="hero py-8 mt-8">
-    <div class="grid grid-cols-5 gap-x-8">
-        <div class="col-span-full md:col-span-3">
+    <div class="grid grid-cols-12 gap-x-8">
+        <div class="col-span-full md:col-span-6">
             <div class="max-w-[512px]">
                 <div class="font-bold text-6xl mb-6">
                     Hello,
@@ -36,12 +40,29 @@
                 </ul>
             </div>
         </div>
-        <div class="col-span-full md:col-span-2">
+        <div class="col-span-full md:col-span-6 hidden md:block">
             <div class="flex justify-center">
-                <div class="leading-[0] shadow rounded-lg overflow-hidden mt-16">
-                    <img src="images/me.jpeg" alt="Shuvo Paul"> 
+                <div class="leading-[0] mt-16">
+                    {#if LottiePlayer}
+                        <LottiePlayer
+                        src="{base}/lottie.json"
+                        autoplay="{true}"
+                        loop="{true}"
+                        controls="{false}"
+                        renderer="svg"
+                        background="transparent"
+                        />
+                    {/if}
+                    
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style lang="postcss" global>
+    
+    .lottie-player {
+        @apply scale-[1.2];
+    }
+</style>
