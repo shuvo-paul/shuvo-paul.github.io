@@ -30,11 +30,19 @@
 	}
 
 	::-webkit-scrollbar-track {
-		@apply px-[1px] bg-slate-600;
+		@apply px-[1px];
+		background-color: rgb(248 250 252);
 	}
 
 	::-webkit-scrollbar-thumb {
-		@apply bg-slate-800 rounded;
+		@apply bg-slate-300 rounded-lg;
+	}
+
+	html {
+		scrollbar-color: rgb(203 213 225) rgb(248 250 252) ;
+		scrollbar-width: thin;
+		scroll-behavior: smooth;
+		scrollbar-gutter: stable;
 	}
 
 	body {
