@@ -1,20 +1,28 @@
 <script>
 	import "../app.css";
+	import { offcanvas } from '$lib/store'
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import MainNav from "$lib/components/MainNav.svelte";
 </script>
 
 <svelte:head>
 	<meta property="og:image" content="" />
 </svelte:head>
 
-<Header />
+<div class="page-wrap" class:offcanvas-open={$offcanvas}>
+	<div class="offcanvas-nav">
+		<MainNav />
+	</div>
 
-<main>
-	<slot />
-</main>
+	<Header />
 
-<Footer />
+	<main>
+		<slot />
+	</main>
+
+	<Footer />
+</div>
 
 <style lang="postcss" global>
 	::-webkit-scrollbar {
@@ -33,6 +41,11 @@
 		@apply bg-slate-50/60 text-primary;
 	}
 
+	button,
+	a {
+		outline: 0;
+	}
+
 	h1,
 	h2,
 	h3,
@@ -44,5 +57,17 @@
 
 	.app {
 		@apply overflow-hidden;
+	}
+
+	.page-wrap {
+		@apply transition-all;
+	}
+
+	.page-wrap.offcanvas-open {
+		@apply translate-x-[-228px];
+	}
+
+	.offcanvas-nav {
+		@apply fixed top-0 left-full z-10 w-[228px] px-8 pt-8 bg-slate-100 h-screen;
 	}
 </style>
