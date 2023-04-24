@@ -38,7 +38,7 @@
 	}
 
 	body {
-		@apply bg-slate-50/60 text-primary;
+		@apply bg-slate-50/90 text-primary;
 	}
 
 	button,
