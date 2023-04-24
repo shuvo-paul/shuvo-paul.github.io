@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<meta property="og:image" content="" />
+	<meta property="og:image" content="/favicon.png" />
 </svelte:head>
 
 <div class="page-wrap" class:offcanvas-open={$offcanvas}>
