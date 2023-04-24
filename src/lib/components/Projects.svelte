@@ -27,7 +27,7 @@
 
                 {#if item.content}
                     <div class="bg-slate-100 bg-opacity-95 shadow p-6 rounded">
-                        {item.content}
+                        {@html item.content}
                     </div>
                 {/if}
 

@@ -11,11 +11,11 @@
             <div class="text-xl pl-8 relative before:w-[2px] before:h-full before:bg-primary/60 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2">
                 {item.title}
                     <a class="text-lg underline" target="_blank" href={`//${item.companyLink}`} rel="noreferrer"> @{item.company}</a> 
-                <span class=" text-sm"> ({item.year})</span>
+                <div class=" text-sm"> ({item.year})</div>
             </div>
             
             <div class="mt-2 pl-8 ">
-                {item.content}
+                {@html item.content}
             </div>
         </div>
     {/each}
