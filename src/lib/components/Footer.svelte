@@ -6,41 +6,63 @@
     // @ts-ignore
     import Twitter from '$lib/icons/twitter.svg?component';
 </script>
-<footer class="text-center pt-10 pb-4 md:pb-6" id="contact">
+<footer class="text-center mt-24 md:mt-28 lg:mt-44 mb-4 md:pb-6" id="contact">
     <div class="container">
         <div class=" max-w-xl mx-auto">
-            <h2 class="mb-3">Get In Touch</h2>
+            <h2 class="mb-3 text-2xl md:text-4xl">Get In Touch</h2>
             <p>Whether you have a project in mind or simply want to discuss your ideas, I'm always eager to connect and collaborate. Let's work together to bring your vision to life!</p>
-            <a class="unstyled mt-9 inline-block mx-auto border border-primary-500 hover:border-primary-400 text-primary-500 hover:text-primary-400 py-3 px-5 rounded" href="mailto:shuvopaul@yahoo.com">
+            <a class="mt-9 inline-block mx-auto border border-primary text-primary py-3 px-5 rounded" href="mailto:shuvopaul@yahoo.com">
                 Say Hello
             </a>
         </div>
         
-        <ul class="social list-none mt-24 mb-6 md:fixed left-0 top-1/2 md:-translate-y-full flex justify-center md:flex-col md:after:content-DEFAULT md:after:w-[28px] md:after:h-[100px] md:after:border-t md:after:border-r md:after:border-primary-50 md:after:border-opacity-60 md:after:absolute md:after:bottom-full md:after:left-0">
-            <li class='mx-4 md:my-4'>
-                <a class="unstyled hover:text-primary-500" href="//github.com/shuvo-paul" target="_blank" rel="noreferrer">
+        <ul class="social">
+            <li class='mx-4 lg:my-4'>
+                <a class="" href="//github.com/shuvo-paul" target="_blank" rel="noreferrer">
                     <Github class="icon" />
                 </a>
             </li>
-            <li class='mx-4 md:my-4'>
-                <a class="unstyled hover:text-primary-500" href="//linkedin.com/in/shuvopaul396" target="_blank" rel="noreferrer">
+            <li class='mx-4 lg:my-4'>
+                <a class="" href="//linkedin.com/in/shuvopaul396" target="_blank" rel="noreferrer">
                     <LinkedIn class="icon"/>
                 </a>
             </li>
-            <li class='mx-4 md:my-4'>
-                <a class="unstyled hover:text-primary-500" href="//twitter.com/shuvopaul396" target="_blank" rel="noreferrer">
+            <li class='mx-4 lg:my-4'>
+                <a class="" href="//twitter.com/shuvopaul396" target="_blank" rel="noreferrer">
                     <Twitter class="icon"/>
                 </a>
             </li>
         </ul>
 
-        <div class="text-center email-address md:fixed md:-right-12 md:rotate-90 md:transform md:bottom-[30%]">
-            <div class="absolute w-[calc(100%+2rem)] h-[20px] border-t border-r border-l border-primary-50 border-opacity-70 bottom-[12px] left-1/2 transform -translate-x-1/2 after:content-DEFAULT after:h-[50px] after:w-[1px] after:bg-primary-50 after:bg-opacity-70 after:absolute after:transform after:-translate-y-full hidden md:block"></div>
-            <a class='unstyled hover:text-primary-500 font-light' href="mailto:shuvopaul@yahoo.com">shuvopaul@yahoo.com</a>
+        <div class="email-address">
+            <div class="line"></div>
+            <a class='font-light' href="mailto:shuvopaul@yahoo.com">shuvopaul@yahoo.com</a>
         </div>
 
-        <div class="text-center text-xs mt-28 md:mt-52">
-            Design Inspiration: <a class=' hover:text-primary-500' href="https://brittanychiang.com/">Brittany Chiang</a>
+        <div class="text-center text-xs mt-28 lg:mt-40">
+            Inspiration: <a class=' hover:text-primary-500' href="https://brittanychiang.com/">Brittany Chiang</a>
         </div>
     </div>
 </footer>
+
+<style lang="postcss">
+    .social {
+        @apply list-none mt-24 mb-6 lg:fixed left-0 top-1/2 lg:-translate-y-full flex justify-center lg:flex-col after:content-[''];
+    }
+
+    .social::after {
+        @apply lg:w-[28px] lg:h-[100px] lg:border-t lg:border-r lg:absolute lg:bottom-full lg:left-0 border-primary;
+    }
+
+    .email-address {
+        @apply text-center lg:fixed lg:-right-12 lg:rotate-90 lg:transform lg:bottom-[30%];
+    }
+
+    .email-address .line {
+        @apply absolute w-[calc(100%+2rem)] h-[20px] border-t border-r border-l bottom-[12px] left-1/2 transform -translate-x-1/2 hidden lg:block border-primary after:content-[''];
+    }
+
+    .email-address .line::after {
+        @apply h-[50px] w-[1px] absolute transform -translate-y-full bg-primary;
+    }
+</style>

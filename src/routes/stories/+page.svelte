@@ -13,7 +13,7 @@
     <h1 class="mb-8">Blog</h1>
     
     {#each posts as post }
-        <a class="text-white hover:text-primary-500 my-4 block" href={`stories/${post.slug}`}>
+        <a class="my-4 block" href={`stories/${post.slug}`}>
             <h2>{post.title}</h2>
             {post.date}
         </a>
