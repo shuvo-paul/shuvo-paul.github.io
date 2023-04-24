@@ -947,6 +947,13 @@ video {
   content: var(--tw-content);
   background-color: transparent;
 }
+@media (min-width: 640px) {
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 @media (min-width: 768px) {
 
   .md\:col-span-7 {
