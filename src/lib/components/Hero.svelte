@@ -22,7 +22,7 @@
         <div class="col-span-full md:col-span-8 lg:col-span-6">
             <div class="max-w-[512px] relative z-10">
                 <div class="font-bold text-6xl mb-6">
-                    Hello,
+                    Hiya<i>!</i>
                 </div>
                 <h1 class="mb-4 unstyled text-4xl font-normal">
                     {title}

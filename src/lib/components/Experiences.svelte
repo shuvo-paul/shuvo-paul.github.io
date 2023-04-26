@@ -8,12 +8,14 @@
     <h2 class="text-2xl mb-9 font-heading-token">{`What I've experienced ...`} </h2>
     {#each list as item }
         <div class="mb-8 max-w-xl">
-            <div class="text-xl pl-8 relative before:w-[2px] before:h-[22px] before:bg-primary/60 before:absolute before:left-0 before:top-0 before:mt-1">
-                {item.title}
+            <div class=" pl-8 relative before:w-[2px] before:h-[22px] before:bg-primary/60 before:absolute before:left-0 before:top-0 before:mt-1">
+                <div class="text-xl">
+                    {item.title}
+                    <a class="underline inline-block" target="_blank" href={`//${item.companyLink}`} rel="noreferrer"> @{item.company}</a>
+                </div>
                 <div class="flex items-end">
-                    <a class="text-base underline block" target="_blank" href={`//${item.companyLink}`} rel="noreferrer"> @{item.company}</a>
                     {#if item.type}
-                        <div class="text-sm before:content-['-'] before:mx-1">
+                        <div class="text-sm">
                             {item.type}
                         </div>
                     {/if}
