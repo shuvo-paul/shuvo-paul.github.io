@@ -16,7 +16,7 @@
         <a href="{base}/#contact" >Contact</a>
     </li>
     <li>
-        <a href="/favicon.png" class="resume-btn" >Resume</a>
+        <a href="/Resume.pdf" target="_blank" class="resume-btn" >Resume</a>
     </li>
 </ul>
 
