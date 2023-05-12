@@ -560,6 +560,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -567,6 +571,9 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 .mb-20 {
   margin-bottom: 5rem;
@@ -585,6 +592,15 @@ video {
 }
 .mb-9 {
   margin-bottom: 2.25rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -643,6 +659,9 @@ video {
 .w-full {
   width: 100%;
 }
+.max-w-4xl {
+  max-width: 56rem;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -651,12 +670,6 @@ video {
 }
 .max-w-\[960px\] {
   max-width: 960px;
-}
-.max-w-md {
-  max-width: 28rem;
-}
-.max-w-sm {
-  max-width: 24rem;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -694,6 +707,9 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.list-disc {
+  list-style-type: disc;
 }
 .list-none {
   list-style-type: none;
@@ -804,6 +820,12 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pl-6 {
   padding-left: 1.5rem;
 }
@@ -873,6 +895,10 @@ video {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .text-primary {
   --tw-text-opacity: 1;
@@ -1068,12 +1094,25 @@ video {
     justify-content: flex-end;
   }
 
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .md\:pb-6 {
     padding-bottom: 1.5rem;
   }
 
   .md\:text-right {
     text-align: right;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl {
@@ -1129,6 +1168,10 @@ video {
   .lg\:my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
   }
 
   .lg\:mt-32 {
