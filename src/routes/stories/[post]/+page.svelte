@@ -25,4 +25,13 @@
     .content :global(ul) :global(li) {
         @apply my-1 list-disc list-inside;
     }
+
+    .content :global(p),
+    .content :global(pre) {
+        @apply mb-4;
+    }
+
+    .content :global(code) {
+        @apply bg-gray-200 p-2 rounded inline-block;
+    }
 </style>
