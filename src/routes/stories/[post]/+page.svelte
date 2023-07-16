@@ -34,4 +34,8 @@
     .content :global(code) {
         @apply bg-gray-200 p-2 rounded inline-block;
     }
+
+    .content :global(hr) {
+        @apply border-gray-200 my-4;
+    }
 </style>
