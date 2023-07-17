@@ -111,11 +111,40 @@ Therefore, the value of `A(1, 10)` is 1024.
     function f(n) {
         return A(0, n);
     }
-    
+
     f(n)
 ```
 
 ```
 =>  A(0, n)
 =>  2n // x === 0 ? 2
+```
+---
+
+```
+    function g(n) {
+        return A(1, n);
+    }
+
+    g(n)
+```
+
+```
+=>  A(1, n)
+=>  2^n // First Problem expansion
+```
+
+---
+
+```
+    function h(n) {
+        return A(2, n);
+    }
+
+    h(n)
+```
+
+```
+=> A(2, n)
+=> 2^2^n // From 2nd problem we can see A(2, 4) => 2^16 => 2^2^4
 ```
