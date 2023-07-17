@@ -31,6 +31,10 @@
         @apply mb-4;
     }
 
+    .content :global(pre) {
+        @apply overflow-x-auto;
+    }
+
     .content :global(code) {
         @apply bg-gray-200 p-2 rounded inline-block;
     }
