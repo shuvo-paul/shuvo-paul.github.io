@@ -76,3 +76,18 @@ Now, we can evaluate each instance of `A(0, y)` as `2 * y`. Since we have 9 inst
 Therefore, the value of `A(1, 10)` is 1024.
 
 ---
+
+```
+    A(2, 4)
+```
+```
+=>  A(1, A(2, 3))
+=>  A(1, A(1, A(2, 2)))
+=>  A(1, A(1, A(1, A(2, 1))))
+=>  A(1, A(1, A(1, 2))) // From third condition y === 1 ? 2
+=>  A(1, A(1, 4)) // From previours example we know A(1, n) => 2^n. So a A(1, 2) will be 2^2. Which is 4.
+=>  A(1, 16) // From previous example A(1, 4) => 2^4 => 16
+=>  2^16 // Previous example
+```
+
+---
