@@ -104,3 +104,18 @@ Therefore, the value of `A(1, 10)` is 1024.
 =>  A(2, 4) // A(1, n) => 2^n
 =>  2^16 // From previous example we got A(2, 4) => 2^16
 ```
+
+---
+
+```
+    function f(n) {
+        return A(0, n);
+    }
+    
+    f(n)
+```
+
+```
+=>  A(0, n)
+=>  2n // x === 0 ? 2
+```
