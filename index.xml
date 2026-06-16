@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I love to build software that works :) on My Portfolio</title><link>https://shuvo-paul.github.io/</link><description>Recent content in I love to build software that works :) on My Portfolio</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shuvo-paul.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Developer</title><link>https://shuvo-paul.github.io/experience/01-nobrainer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/experience/01-nobrainer/</guid><description>&lt;ul&gt;
+&lt;li&gt;Developed and styled website for clients. Mostly used Zurb Foundation, SCSS and JS.&lt;/li&gt;
+&lt;li&gt;Worked with SilverStripe CMS.&lt;/li&gt;
+&lt;li&gt;Colaborated with designer and other developers.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Site Monitor</title><link>https://shuvo-paul.github.io/projects/01-site-monitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/projects/01-site-monitor/</guid><description>&lt;p&gt;A website uptime monitoring web app built with Go and PostgreSQL. Users can add sites for monitoring and receive Slack notifications when a site goes down.&lt;/p&gt;</description></item><item><title>Developer</title><link>https://shuvo-paul.github.io/experience/02-polarlondon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/experience/02-polarlondon/</guid><description>&lt;ul&gt;
+&lt;li&gt;Develop and style Websites.&lt;/li&gt;
+&lt;li&gt;Primarily we use wordpress (roots.io)&lt;/li&gt;
+&lt;li&gt;Tailwindcss for styling&lt;/li&gt;
+&lt;li&gt;Create Email Templates that are compatible with major clients.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>SICP(JS) Excercise 1.10 explanation</title><link>https://shuvo-paul.github.io/stories/sicp-excercise-110/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/stories/sicp-excercise-110/</guid><description>&lt;p&gt;&lt;strong&gt;The following procedure computes a mathematical function called Ackermann&amp;rsquo;s function.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function A(x, y) {
+ return y === 0
+ ? 0
+ : x === 0
+ ? 2 * y
+ : y === 1
+ ? 2
+ : A(x - 1, A(x, y - 1));
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;What are the values of the following expressions?&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;A (1, 10)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;A(2, 4)
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;A(3, 3)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Consider the following procedures, where A is the procedure defined above:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;function f(n) {
+ return A(0, n);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;function g(n) {
+ return A(1, n);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;function h(n) {
+ return A(2, n);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Solutions&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Usefull Services that I Like</title><link>https://shuvo-paul.github.io/stories/usefull-services-for-developers/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/stories/usefull-services-for-developers/</guid><description>&lt;h2 id="postgress-db"&gt;Postgress DB&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://turso.tech/"&gt;https://turso.tech/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://planetscale.com/pricing"&gt;https://planetscale.com/pricing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
