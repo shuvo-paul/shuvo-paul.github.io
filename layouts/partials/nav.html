@@ -1,0 +1,13 @@
+<ul class="flex-wrap flex-col lg:flex-row lg:-mx-4 flex">
+  {{ range .Site.Menus.main }}
+    {{ if eq .Name "Resume" }}
+      <li class="nav-item">
+        <a href="{{ .URL }}" target="_blank" class="nav-link resume-btn">{{ .Name }}</a>
+      </li>
+    {{ else }}
+      <li class="nav-item">
+        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

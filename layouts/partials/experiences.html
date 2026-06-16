@@ -1,0 +1,23 @@
+{{ $exp := .Site.GetPage "/experience" }}
+<section id="experience" class="mt-24 md:mt-28 lg:mt-32 relative z-10">
+  <h2 class="text-2xl mb-9 font-serif">What I've experienced ...</h2>
+  {{ range $exp.Pages.ByWeight }}
+    <div class="mb-8 max-w-xl">
+      <div class="pl-8 exp-item-before">
+        <div class="text-xl">
+          {{ .Title }}
+          <a class="underline inline-block" target="_blank" href="{{ .Params.companyLink }}" rel="noreferrer"> @{{ .Params.company }}</a>
+        </div>
+        <div class="flex items-end">
+          {{ if .Params.type }}
+            <div class="text-sm">{{ .Params.type }}</div>
+          {{ end }}
+          <div class="text-sm before:content-['-'] before:mx-1">({{ .Params.year }})</div>
+        </div>
+      </div>
+      <div class="mt-2 pl-8 exp-content">
+        {{ .Content }}
+      </div>
+    </div>
+  {{ end }}
+</section>

@@ -1,3 +1,44 @@
 baseURL = 'https://shuvo-paul.github.io/'
-locale = 'en-us'
 title = 'My Portfolio'
+locale = 'en-US'
+
+[languages]
+  [languages.en]
+    label = 'English'
+    weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  email = 'shuvopaul@yahoo.com'
+  github = 'github.com/shuvo-paul'
+  linkedin = 'linkedin.com/in/shuvopaul396'
+  twitter = 'twitter.com/shuvopaul396'
+
+[[menu.main]]
+  name = 'Stories'
+  url = '/stories'
+  weight = 1
+
+[[menu.main]]
+  name = 'Experiences'
+  url = '/#experience'
+  weight = 2
+
+[[menu.main]]
+  name = 'Projects'
+  url = '/#projects'
+  weight = 3
+
+[[menu.main]]
+  name = 'Contact'
+  url = '/#contact'
+  weight = 4
+
+[[menu.main]]
+  name = 'Resume'
+  url = '/Resume.pdf'
+  weight = 5

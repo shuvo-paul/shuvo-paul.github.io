@@ -1,0 +1,21 @@
+<header class="py-8 relative z-10">
+  <div class="container">
+    <div class="flex flex-wrap flex-row items-center">
+      <div class="flex-shrink">
+        <a href="/" class="text-2xl md:text-3xl lg:text-4xl font-medium tracking-wide leading-none header-link">{{`{{Shuvo Paul}}`}}</a>
+      </div>
+      <div class="flex-grow">
+        <div class="flex lg:hidden justify-end pt-[6px]">
+          <button class="hamburger hamburger--spin js-hamburger" id="hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
+        </div>
+        <div class="hidden flex-wrap flex-row justify-end lg:flex">
+          {{ partial "nav.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

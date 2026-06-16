@@ -1,0 +1,13 @@
+{{ define "title" }}Home{{ end }}
+{{ define "head" }}
+<meta name="description" content="Software developer focused on building reliable backend systems with clean architecture and pragmatic code." />
+{{ end }}
+{{ define "main" }}
+<div class="container">
+  <div class="max-w-6xl sm:px-4 mx-auto">
+    {{ partial "hero.html" . }}
+    {{ partial "experiences.html" . }}
+    {{ partial "projects.html" . }}
+  </div>
+</div>
+{{ end }}

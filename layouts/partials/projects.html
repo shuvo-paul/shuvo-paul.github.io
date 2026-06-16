@@ -1,0 +1,46 @@
+{{ $projects := .Site.GetPage "/projects" }}
+<div class="mt-24 md:mt-28 lg:mt-32" id="projects">
+  <h2 class="text-2xl mb-9 font-serif">Some things I've built ...</h2>
+  {{ $idx := 0 }}
+  {{ range $projects.Pages.ByWeight }}
+    {{ $idx = add $idx 1 }}
+    <div class="grid grid-cols-12 gap-x-8 gap-y-4 items-center mb-20">
+      <div class="col-span-full md:row-span-full {{ if eq (mod $idx 2) 1 }}md:col-start-1 md:col-span-7{{ else }}md:col-span-7 md:col-end-13{{ end }}">
+        <div class="project-img-wrapper">
+          <img src="{{ .Params.img }}" alt="" class="w-full h-auto" />
+        </div>
+      </div>
+      <div class="col-span-full md:row-span-full {{ if eq (mod $idx 2) 1 }}md:col-span-7 md:col-end-13 md:text-right{{ else }}md:col-start-1 md:col-span-7{{ end }} z-10">
+        {{ if .Title }}
+          <h3 class="text-primary text-xl mb-4 mx-3 font-serif">{{ .Title }}</h3>
+        {{ end }}
+        {{ if .Content }}
+          <div class="bg-slate-100 bg-opacity-95 shadow p-6 rounded">
+            {{ .Content }}
+          </div>
+        {{ end }}
+        <ul class="flex list-none mt-2 font-light {{ if eq (mod $idx 2) 1 }}md:justify-end{{ end }}">
+          {{ range .Params.techs }}
+            <li class="mx-3">{{ . }}</li>
+          {{ end }}
+        </ul>
+        <ul class="mt-4 flex list-none {{ if eq (mod $idx 2) 1 }}md:justify-end{{ end }}">
+          {{ if .Params.gitURL }}
+            <li class="mx-3">
+              <a class="hover:text-primary" target="_blank" href="{{ .Params.gitURL }}" rel="noreferrer">
+                {{ partial "icons/github.html" . }}
+              </a>
+            </li>
+          {{ end }}
+          {{ if .Params.externalURL }}
+            <li class="mx-3">
+              <a class="hover:text-primary" target="_blank" href="{{ .Params.externalURL }}" rel="noreferrer">
+                {{ partial "icons/external-link.html" . }}
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  {{ end }}
+</div>
