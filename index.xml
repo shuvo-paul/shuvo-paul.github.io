@@ -7,7 +7,7 @@
 &lt;li&gt;Primarily we use wordpress (roots.io)&lt;/li&gt;
 &lt;li&gt;Tailwindcss for styling&lt;/li&gt;
 &lt;li&gt;Create Email Templates that are compatible with major clients.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>SICP(JS) Excercise 1.10 explanation</title><link>https://shuvo-paul.github.io/stories/sicp-excercise-110/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/stories/sicp-excercise-110/</guid><description>&lt;p&gt;&lt;strong&gt;The following procedure computes a mathematical function called Ackermann&amp;rsquo;s function.&lt;/strong&gt;&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>SICP(JS) Excercise 1.10 explanation</title><link>https://shuvo-paul.github.io/writing/sicp-excercise-110/</link><pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/writing/sicp-excercise-110/</guid><description>&lt;p&gt;&lt;strong&gt;The following procedure computes a mathematical function called Ackermann&amp;rsquo;s function.&lt;/strong&gt;&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;function A(x, y) {
  return y === 0
  ? 0
@@ -31,7 +31,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;function h(n) {
  return A(2, n);
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Solutions&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Usefull Services that I Like</title><link>https://shuvo-paul.github.io/stories/usefull-services-for-developers/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/stories/usefull-services-for-developers/</guid><description>&lt;h2 id="postgress-db"&gt;Postgress DB&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Solutions&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Usefull Services that I Like</title><link>https://shuvo-paul.github.io/writing/usefull-services-for-developers/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate><guid>https://shuvo-paul.github.io/writing/usefull-services-for-developers/</guid><description>&lt;h2 id="postgress-db"&gt;Postgress DB&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://turso.tech/"&gt;https://turso.tech/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://planetscale.com/pricing"&gt;https://planetscale.com/pricing&lt;/a&gt;&lt;/li&gt;
