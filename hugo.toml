@@ -19,8 +19,8 @@ locale = 'en-US'
   twitter = 'twitter.com/shuvopaul396'
 
 [[menu.main]]
-  name = 'Stories'
-  url = '/stories'
+  name = 'Writing'
+  url = '/writing'
   weight = 1
 
 [[menu.main]]

@@ -1,8 +1,8 @@
-{{ define "title" }}Stories - {{ .Site.Title }}{{ end }}
+{{ define "title" }}Writing - {{ .Site.Title }}{{ end }}
 {{ define "main" }}
 <div class="container">
   <div class="max-w-4xl mx-auto mt-24 md:mt-28 border-b pb-14 md:pb-24">
-    <h1 class="mb-14 lg:mb-24 text-2xl md:text-3xl border-b pb-2 md:pb-4 font-serif">Stories</h1>
+    <h1 class="mb-14 lg:mb-24 text-2xl md:text-3xl border-b pb-2 md:pb-4 font-serif">Writing</h1>
     
     {{ range .Pages.ByDate.Reverse }}
       <a class="my-4 block" href="{{ .RelPermalink }}">
